@@ -13,8 +13,125 @@
 </head>
 <body>
      <!--Le contenu de ma page -->
+            <!--L'entète LOGO + lien-->
+<header>
+    <nav>
+        <div><img src="images/logoAfriConnectSummit.png" alt="logo"></div>
+        <ul class="menu" id="menu">
+            <li><a href="">Accueil</a></li>
+            <li><a href="">Programme</a></li>
+            <li><a href="">Intervenantx</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger"></div>
+        <!--Bouton dark mobile-->
+            <button id="themeToggle">🌙</button>
+    </nav>
+</header>
+<main>
+      <!-- Hero -->
+    <section class="hero-interne">
+        <h1>Intervenants</h1>
+        <p class="breadcrumb">Accueil > Intervenants</p>
+    </section>
 
-     
+    <!-- Boutons de filtre -->
+    <section class="filtre">
+
+        <button class="btn active" data-filter="all">Tous</button>
+        <button class="btn" data-filter="ia">IA & Tech</button>
+        <button class="btn" data-filter="business">Business</button>
+        <button class="btn" data-filter="design">Design</button>
+        <button class="btn" data-filter="data">Data</button>
+
+    </section>
+    <!-- Cartes des intervenants -->
+    <section class="speakers">
+
+        <div class="speaker ia">
+            <img src="images/interv1.png" alt="intervenant1">
+            <h3>Awa Ndiaye</h3>
+            <p>IA & Tech</p>
+            <p>Sénégal</p>
+        </div>
+
+        <div class="speaker business">
+            <img src="images/intervant2.jpg.jpeg" alt="inter2">
+            <h3>Jean Dupont</h3>
+            <p>Business</p>
+            <p>France</p>
+        </div>
+
+        <div class="design">
+            <img src="images/intervant5.jpg.jpeg" alt="inter3">
+            <h3>Fatou Diop</h3>
+            <p>Design</p>
+            <p>Sénégal</p>
+        </div>
+
+        <div class="data">
+            <img src="images/intervant6.jpeg" alt="inter4">
+            <h3>Ali Sow</h3>
+            <p>Data</p>
+            <p>Mali</p>
+        </div>
+
+        <div class="ia">
+            <img src="images/intervant7.jpeg" alt="inter5">
+            <h3>Mariam Fall</h3>
+            <p>IA & Tech</p>
+            <p>Sénégal</p>
+        </div>
+
+        <div class="business">
+            <img src="images/intervant10.jpg.jpeg" alt="inter6">
+            <h3>Paul Martin</h3>
+            <p>Business</p>
+            <p>Canada</p>
+        </div>
+
+        <div class="design">
+            <img src="images/intervant9.jpeg" alt="inter7">
+            <h3>Sophie Diallo</h3>
+            <p>Design</p>
+            <p>Guinée</p>
+        </div>
+
+        <div class="data">
+            <img src="images/intervant8.jpg.jpeg" alt="inter8">
+            <h3>Oumar Kane</h3>
+            <p>Data</p>
+            <p>Sénégal</p>
+        </div>
+
+        <div class="ia">
+            <img src="images/intervent3.jpg.jpeg" alt="inter9">
+            <h3>Sarah Ba</h3>
+            <p>IA & Tech</p>
+            <p>Maroc</p>
+        </div>
+
+    </section>
+</main>
+ <footer>
+        <div>
+            <h3>Icones Réseaux</h3>
+            <a href="http://telegram.org"><i class="bi bi-telegram"></i></a>
+            <a href="http://youtube.com"><i class="bi bi-youtube"></i></a>
+            <a href="http://instagram.com"><i class="bi bi-instagram"></i></a>
+        </div>
+        <div>
+            <h3>Copright dynamique</h3>
+            <p> <span id="year"> @ AfriConnectSummit-Plateforme d'innovations techniques en Afrique</span></p>
+        </div>
+        <div>
+            <h3>Boutton retour en haut</h3>
+            <button id="btnTop">
+                <i class=" bi bi-arrow-up-circle"></i>
+            </button>
+        </div>
+    </footer>
+<!--Section Hero-->
     <script src="js/main.js"></script>
 </body>
 </html>
