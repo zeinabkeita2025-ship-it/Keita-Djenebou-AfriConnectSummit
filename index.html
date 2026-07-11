@@ -18,95 +18,113 @@
     <!--L'entète LOGO + lien-->
     <header>
         <nav>
-            <div><img src="images/logoAfriConnectSummit.png" alt="logo"></div>
+            <div class="nav-container">
+            <div> <a href="index.html"><img src="images/logoAfriConnectSummit.png" alt="logo"  class="logo"></a></div>
             <ul class="menu" id="menu">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="programme.html">Programme</a></li>
-                <li><a href="intervenants.html">Intervenantx</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            <div class="hamburger" id="hamburger"></div>
+            <div class="btn-et-autres">
+            <a href="contact.html" class="inscription">S'inscrire maitenant</a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             <!--Bouton dark mobile-->
             <button id="themeToggle">🌙</button>
+            </div>
+            </div>
         </nav>
     </header>
     <main>
         <!--Section hero-->
         <section class="Hero">
+            <div class="gauche">
             <h1>AfriConnect Summit 2026</h1>
             <h2>
-                Connecter les talents africains,inspirer l'innovation,construire l'avenir,.
+                Connecter les talents africains,inspirer l'innovation,construire l'avenir.
                 <br>18 - 20 Novembre 2026
                 <br>Dakar, Sénégal
             </h2>
-            <button>Voir le programme</button>
-            <button>S'inscrire</button>
-            <h3>Le sommet commence dans 120 jours 05 heures 40 minutes 12 secondes</h3>
+            <a href="programme.html" class="voir">Voir le programme</a>
+            <a href="contact.html" class="inscrire">Se connecter</a>
+             <h3>Le sommet commence dans <strong>120</strong> jours <strong>05</strong> heures <strong>40</strong>  minutes <strong>12</strong> secondes</h3>
+            </div>
+            <div class="video">
+        <video autoplay muted loop playsinline class="hero-video">
+        <source src="images/conference.mp4" type="video/mp4">
+         </video>
+         </div>
         </section>
         <!--Sections Chiffres clés-->
         <section class="chiffres-clés">
             <div class="chiffre">
                 <div>
-                    <h2>+1 200</h2>
+                    <h2>1 200+</h2>
                     <p>Participants</p>
-                </div>
+                </div>  
                 <div>
-                    <h2>48</h2>
+                    <h2>48+</h2>
                     <p>Intervenants</p>
                 </div>
                 <div>
-                    <h2>3</h2>
+                    <h2>3+</h2>
                     <p>Jours</p>
                 </div>
                 <div>
-                    <h2>12</h2>
+                    <h2>12+</h2>
                     <p>Pays</p>
                 </div>
             </div>
         </section>
         <!--Sections Pourquoi Participer-->
+        <h2 class="center">Les reaisons les plus valables pour y participer</h2>
         <section class="Participer">
             <div>
-                <i class="icon"></i>
+                <i class="bi bi-lightbulb"></i>
                 <h2>Développer ses compétences</h2>
                 <p>Participer à des ateliers pratiques, pour approfondir tes capacités.</p>
             </div>
             <div>
-                <i class="icon"></i>
+                <i class="bi bi-people-fill"></i>
                 <h2> Rencontrer des experts</h2>
                 <p>Échanger avec les meilleurs professionnels africains, très qualifiés.</p>
             </div>
             <div>
-                <i class="icon"></i>
+                <i class="bi bi-graph-up-arrow"></i>
                 <h2>Créer des opportunités</h2>
                 <p>Rencontrer des entreprises et investisseurs et choisir selon les besoins.</p>
             </div>
             </div>
         </section>
         <!--Sections Intervenants Vedettes-->
+        <h2 class="center">Nos Intervenants Vedettes Qui nous aident à bien realiser ce conférence</h2>
         <section class="intervenants">
-            <div>
+            <div class="carde">
                 <img src="images/inter41.jpg" alt="inter1">
                 <h3>Ibrahim Keita</h3>
                 <h4>Ingenieur Reseaux et Securité</h4>
                 <h5>📍Pays:Mali</h5>
                 <button><a href="intervenants.html">Learn More</a></button>
             </div>
-            <div>
+            <div class="carde">
                 <img src="images/intervant8.jpg.jpeg" alt="inter2">
-                <h3>Oumar Sacko</h3>
+                <h3>Oumar Sacko</h3> 
                 <h4>Marketing Digital</h4>
                 <h5>📍Pays:Sénégal</h5>
                 <button><a href="intervenants.html">Learn More</a></button>
             </div>
-            <div>
+            <div class="carde">
                 <img src="images/inter46.avif" alt="inter3">
                 <h3> Cheikh N'Diaye</h3>
                 <h4>Data Scientist</h4>
                 <h5>📍Pays:Cote d'Ivoire</h5>
                 <button><a href="intervenants.html">Learn More</a></button>
             </div>
-            <div>
+            <div class="carde">
                 <img src="images/inter45.avif" alt="inter4">
                 <h3> Héléna Fianno</h3>
                 <h4>Développeuse Web</h4>
@@ -115,40 +133,74 @@
             </div>
         </section>
         <!--Sections SPONSORS-->
-        <section>
-            <div>
-                <h2>OR</h2>
-                <img src="" alt="">
-            </div>
-            <div>
-                <h2>ARGENT</H2>
-                <img src="" alt="">
-            </div>
-            <div>
-                <h2>BRONZE</h2>
-                <img src="" alt="">
-            </div>
-        </section>
+      <section class="sponsors">
+        <span class="part">Partenaires</span>
+         <h2>Nos Sponsors</h2>
+        <p> Un grand Merci à nos partenaires qui contribuent au progrès de AfriConnect Summit</p>
+
+    <div class="sponsors-container">
+
+        <div class="card silver">
+            <span class="badge">🥈 Sponsor Argent</span>
+            <img src="images/sonatel.png" alt="Sonatel">
+        </div>
+
+        <div class="card gold">
+            <span class="badge">🥇 Sponsor Or</span>
+            <img src="images/afribank.png" alt="AfriBank">
+        </div>
+
+        <div class="card bronze">
+            <span class="badge">🥉 Sponsor Bronze</span>
+            <img src="images/orange.png" alt="Orange">
+        </div>
+
+    </div>
+</section>
     </main>
     <!--Footer-->
     <footer>
-        <div>
-            <h3>Icones Réseaux</h3>
-            <a href="http://telegram.org"><i class="bi bi-telegram"></i></a>
-            <a href="http://youtube.com"><i class="bi bi-youtube"></i></a>
-            <a href="http://instagram.com"><i class="bi bi-instagram"></i></a>
+        <div class="footer-container">
+        <div class="footer-col">
+          <h3>AfriConnectSummit</h3>
+          <p>Plateforme qui rassemble les innovateurs, entrepreneurs et experts africains pour construire le futur de la technologie</p>
+          <a href="index.html">
+            <div class="logo">
+             <img src="images/logoAfriConnectSummit.png" alt="logo" class="logo">
+            </div>
+          </a>
         </div>
-        <div>
-            <h3>Copright dynamique</h3>
-            <p> <span id="year"> @ AfriConnectSummit-Plateforme d'innovations techniques en Afrique</span></p>
+        <div class="footer-col">
+          <h3>Liens utiles</h3>
+          <ul class="list-unstyled">
+            <li> <a href="index.html">Accueil</a></li>
+            <li> <a href="programme.html">Programme</a></li>
+            <li><a href="intervenants.html">Intervenants</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
-        <div>
-            <h3>Boutton retour en haut</h3>
-            <button id="btnTop">
+        <div class="footer-col">
+          <!--contact-->
+          <h3>Contact</h3>
+          <p> <a href="mailto:Contact@afriConnectSummit.com">Contact@afriConnectSummit</a></p>
+          <p>📞 +221 77 143 63 75</p>
+          <p>📍Dakar,Sénégal</p>
+        </div>
+        </div>
+      <hr>
+      <div class="foot-bas">
+        <p> <span id="year"> @ AfriConnect Summit - Tous droits réservés</span>
+        </p>
+        <div class="icon">
+          <a href="http://telegram.org"><i class="bi bi-telegram"></i></a>
+          <a href="http://youtube.com"><i class="bi bi-youtube"></i></a>
+          <a href="http://instagram.com"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+    <button id="btnTop">
                 <i class=" bi bi-arrow-up-circle"></i>
             </button>
-        </div>
-    </footer>
     <script src="js/main.js"></script>
 </body>
 
