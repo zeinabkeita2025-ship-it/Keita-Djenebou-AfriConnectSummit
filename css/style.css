@@ -197,7 +197,7 @@ a::after {
 /*Section hero*/
 .Hero {
     width: 90%;
-    max-width: 1300px;
+    max-width: 1400px;
     margin: 30px auto;
     display: flex;
     justify-content: space-between;
@@ -205,6 +205,10 @@ a::after {
     gap: 60px;
    /* min-height: auto;*/
     padding: 30px 0;
+    margin: 0;
+    background:
+radial-gradient(circle at top left,#dff8eb 0%,white 35%),
+radial-gradient(circle at bottom right,#ede4ff 0%,white 40%);
     /*bloque le débordement*/
 }
 
@@ -370,12 +374,10 @@ a::after {
     border: none;
     border-radius: 15px;
     width: 280px;
-    height: auto;
+    height: 400px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
     box-shadow: var(--shadow);
-    height: 100%;
 }
 
 .intervenants div:hover {
@@ -403,8 +405,8 @@ a::after {
     margin-top: 15px;
 }
 
-.intervenants button {
-    margin: 20px;
+.btne {
+    margin-top: 50px;
     padding: 12px 25px;
     background: #1d9d50;
     border: none;
@@ -414,6 +416,7 @@ a::after {
 .intervenants a {
     color: white;
     text-decoration: none;
+     margin-top: 50px;
 }
 /*Responsive des intervenants vedettes*/
 @media (max-width:375px) {
@@ -707,7 +710,18 @@ table tr:hover{
     transition:.3s;
 }
 
+@media (max-width:768px){
 
+    .planning{
+        overflow-x:auto;
+        -webkit-overflow-scrolling:touch;
+    }
+
+    .planning table{
+        min-width:650px;
+        width:100%;
+    }
+}
 /* =====================
 THEMES
 =====================*/
@@ -788,69 +802,168 @@ THEMES
 }
 
 /*Footer*/
+/* =========================
+        FOOTER PREMIUM
+=========================*/
 
 footer{
-    background:#121212;
+
+    background:#0f172a;
     color:#fff;
-    padding:30px 8% 10px;
+    margin-top:100px;
 }
 
 .footer-container{
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    gap: 25px;
-}
-footer .logo{
-    width: 140px;
-    margin-bottom: 10px;
-}
-footer p{
-    color: #cfcfcf;
-    line-height: 1.7;
-}
-footer h3{
-    color: #5DBB63;
-    margin-bottom: 20px;
+
+    width:90%;
+    max-width:1300px;
+
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+
+    gap:70px;
+
+    padding:70px 0;
 }
 
-footer a{
-    display: block;
-    text-decoration: none;
-    color:#d6d6d6;
-    margin-bottom:15px;
+.footer-logo{
+
+    width:180px;
+    margin-bottom:25px;
+}
+
+.footer-col h3{
+
+    color:var(--secondary);
+    font-size:24px;
+    margin-bottom:25px;
+}
+
+.footer-col p{
+
+    color:#cbd5e1;
+    line-height:1.9;
+    margin-bottom:12px;
+}
+
+.footer-col ul{
+
+    list-style:none;
+}
+
+.footer-col li{
+
+    margin-bottom:18px;
+}
+
+.footer-col a{
+
+    text-decoration:none;
+    color:#cbd5e1;
     transition:.3s;
 }
-footer a:hover{
-    color:#5DBB63;
+
+.footer-col a:hover{
+
+    color:var(--secondary);
+    padding-left:8px;
 }
-hr{
-    margin: 40px;
-    border: none;
-    border-top: 2px solid #333;
+
+.socials{
+
+    display:flex;
+    gap:18px;
+    margin-top:25px;
 }
-.foot-bas{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 0;
-    text-align: center;
-    color: #bbb;
-    font-size: .9rem;
+
+.socials a{
+
+    width:48px;
+    height:48px;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:#1e293b;
+
+    font-size:22px;
+
+    transition:.35s;
 }
-.icon{
-    display: flex;
-    gap: 20px;
+
+.socials a:hover{
+
+    background:var(--secondary);
+    color:white;
+
+    transform:translateY(-6px);
 }
-/*Responsive du footer*/
-@media (max-width:768px) {
-    .footer-container{
-        grid-template-columns: repeat(2, 1f);
-    }
+
+.footer-bottom{
+
+    border-top:1px solid rgba(255,255,255,.1);
+
+    text-align:center;
+
+    padding:25px;
+
+    color:#94a3b8;
+
+    font-size:15px;
 }
-   @media (max-width:375px) {
-    .footer-container{
-        grid-template-columns: 1f;
-    } 
+@media(max-width:900px){
+
+.footer-container{
+
+    grid-template-columns:1fr;
+    text-align:center;
+
+    gap:50px;
+}
+
+.footer-logo{
+
+    margin:auto auto 25px;
+}
+
+.socials{
+
+    justify-content:center;
+}
+
+}
+
+@media(max-width:500px){
+
+.footer-container{
+
+    padding:50px 20px;
+}
+
+.footer-col h3{
+
+    font-size:22px;
+}
+
+.footer-col p,
+.footer-col a{
+
+    font-size:16px;
+}
+
+.socials a{
+
+    width:42px;
+    height:42px;
+
+    font-size:20px;
+}
+
 }
 /*Bouton retour en haut*/
 #btnTop{
@@ -858,15 +971,15 @@ hr{
     height:60px;
     border:none;
     border-radius:50%;
-    background:#0d6efd;
-    color:white;
+    background:var(--dark);
     font-size:28px;
     cursor:pointer;
     transition:.3s;
     position: fixed;
-    left: 50%;
     bottom: 10px;
+    right: 10px;
     transform: translateX(-50%);
+    color: white;
 }
 #btnTop:hover{
     background:white;
@@ -1463,6 +1576,99 @@ small{
 
     .content p{
         font-size: 16px;
+    }
+
+}
+
+/*Responsivité de la page d'auccueil*/
+/*Pour la navbar*/
+ @media(max-width:768px){
+
+    .btn-et-autres{
+        gap:8px;
+    }
+
+    .inscription{
+        padding:8px 14px;
+        font-size:14px;
+    }
+
+    .logo{
+        height:60px;
+        width:auto;
+    }
+
+}
+/* RESPONSIVE HERO */
+@media (max-width: 768px) {
+
+    .Hero{
+        flex-direction: column;
+        gap: 30px;
+        width: 95%;
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .gauche{
+        flex: 1;
+        width: 100%;
+        padding: 0;
+    }
+
+    .gauche h1{
+        font-size: 3rem;
+        line-height: 1.1;
+    }
+
+    .gauche h2{
+        font-size: 1.5rem;
+    }
+
+    .video{
+        flex: 1;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .hero-video{
+        width: 100%;
+        height: auto;
+    }
+
+    /* Boutons */
+    .voir,
+    .inscrire{
+        display: inline-block;
+        width: 220px;
+        margin: 10px auto;
+    }
+
+    .center{
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    /* Chiffres */
+    .chiffre{
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+
+    /* Participer */
+    .Participer{
+        grid-template-columns: 1fr;
+    }
+
+    /* Intervenants */
+    .intervenants{
+        grid-template-columns: 1fr;
+    }
+
+    /* Sponsors */
+    .sponsors-container{
+        flex-direction: column;
+        align-items: center;
     }
 
 }
