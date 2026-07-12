@@ -16,25 +16,31 @@
 <body>
     <!--Le contenu de ma page -->
     <!--L'entète LOGO + lien-->
-    <header>
+   <header>
         <nav>
             <div class="nav-container">
-            <div><img src="images/logoAfriConnectSummit.png" alt="logo" class="logo"></div>
+            <div> <a href="index.html"><img src="images/logoAfriConnectSummit.png" alt="logo"  class="logo"></a></div>
             <ul class="menu" id="menu">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="programme.html">Programme</a></li>
-                <li><a href="intervenants.html">Intervenantx</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="btn-et-autres">
-            <button class="inscription">S'inscrire maitenant</button>
-            <div class="hamburger" id="hamburger"></div>
-            <!--Bouton dark mobile-->
+                 <!--Bouton dark mobile-->
             <button id="themeToggle">🌙</button>
+            <a href="contact.html" class="inscription">S'inscrire maitenant</a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             </div>
             </div>
         </nav>
     </header>
+    <main>
+    
         <!-- Hero -->
         <section class="hero-interne">
 
@@ -168,25 +174,25 @@
     <div class="grid-themes">
 
         <div class="theme-card">
-            <div class="icon">🤖</div>
+            <div class="icone"><i class="bi bi-cpu-fill"></i></div>
             <h3>IA & Tech</h3>
             <p>Découvrez les dernières avancées de l'intelligence artificielle.</p>
         </div>
 
         <div class="theme-card">
-            <div class="icon">💼</div>
+            <div class="icone"><i class="bi bi-briefcase-fill"></i></div>
             <h3>Business</h3>
             <p>Les nouvelles stratégies pour accélérer la croissance des entreprises.</p>
         </div>
 
         <div class="theme-card">
-            <div class="icon">🎨</div>
+            <div class="icone"><i class="bi bi-palette-fill"></i></div>
             <h3>Design</h3>
             <p>Créer des interfaces modernes centrées sur l'expérience utilisateur.</p>
         </div>
 
         <div class="theme-card">
-            <div class="icon">📊</div>
+            <div class="icone"> <i class="bi bi-bar-chart-fill"></i></div>
             <h3>Data</h3>
             <p>Exploiter les données pour prendre de meilleures décisions.</p>
         </div>
@@ -194,24 +200,50 @@
     </div>
 
 </section>
+</main>
+    <!--Footer-->
     <footer>
-        <div>
-            <h3>Icones Réseaux</h3>
-            <a href="http://telegram.org"><i class="bi bi-telegram"></i></a>
-            <a href="http://youtube.com"><i class="bi bi-youtube"></i></a>
-            <a href="http://instagram.com"><i class="bi bi-instagram"></i></a>
+        <div class="footer-container">
+        <div class="footer-col">
+          <h3>AfriConnectSummit</h3>
+          <p>Plateforme qui rassemble les innovateurs, entrepreneurs et experts africains pour construire le futur de la technologie</p>
+          <a href="index.html">
+            <div class="logo">
+             <img src="images/logoAfriConnectSummit.png" alt="logo" class="logo">
+            </div>
+          </a>
         </div>
-        <div>
-            <h3>Copright dynamique</h3>
-            <p> <span id="year"> @ AfriConnectSummit-Plateforme d'innovations techniques en Afrique</span></p>
+        <div class="footer-col">
+          <h3>Liens utiles</h3>
+          <ul class="list-unstyled">
+            <li> <a href="index.html">Accueil</a></li>
+            <li> <a href="programme.html">Programme</a></li>
+            <li><a href="intervenants.html">Intervenants</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
         </div>
-        <div>
-            <h3>Boutton retour en haut</h3>
-            <button id="btnTop">
+        <div class="footer-col">
+          <!--contact-->
+          <h3>Contact</h3>
+          <p> <a href="mailto:Contact@afriConnectSummit.com">Contact@afriConnectSummit</a></p>
+          <p>📞 +221 77 143 63 75</p>
+          <p>📍Dakar,Sénégal</p>
+        </div>
+        </div>
+      <hr>
+      <div class="foot-bas">
+        <p> <span id="year"> @ AfriConnect Summit - Tous droits réservés</span>
+        </p>
+        <div class="icon">
+          <a href="http://telegram.org"><i class="bi bi-telegram"></i></a>
+          <a href="http://youtube.com"><i class="bi bi-youtube"></i></a>
+          <a href="http://instagram.com"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+    <button id="btnTop">
                 <i class=" bi bi-arrow-up-circle"></i>
             </button>
-        </div>
-    </footer>
     <script src="js/main.js"></script>
 </body>
 

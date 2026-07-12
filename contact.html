@@ -1,157 +1,226 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact-AfriConnectSummit</title>
-     <!--google fonts-->
+    <!--google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
     <!--icons bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
     <!--Feuille CSS-->
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-     <!--Le contenu de ma page -->
-          <!--L'entète LOGO + lien-->
-<header>
+    <!--Le contenu de ma page -->
+    <!--L'entète LOGO + lien-->
+    <header>
         <nav>
             <div class="nav-container">
-            <div><img src="images/logoAfriConnectSummit.png" alt="logo" class="logo"></div>
+            <div> <a href="index.html"><img src="images/logoAfriConnectSummit.png" alt="logo"  class="logo"></a></div>
             <ul class="menu" id="menu">
                 <li><a href="index.html">Accueil</a></li>
                 <li><a href="programme.html">Programme</a></li>
-                <li><a href="intervenants.html">Intervenantx</a></li>
+                <li><a href="intervenants.html">Intervenants</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
             <div class="btn-et-autres">
-            <button class="inscription">S'inscrire maitenant</button>
-            <div class="hamburger" id="hamburger"></div>
-            <!--Bouton dark mobile-->
+                 <!--Bouton dark mobile-->
             <button id="themeToggle">🌙</button>
+            <a href="contact.html" class="inscription">S'inscrire maitenant</a>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
             </div>
             </div>
         </nav>
     </header>
-<!--Section HERO-->
-<main>
-<section class="hero-interne">
-    <h1>Contact</h1>
-    <p class="breadcrumb">Accueil > Contact</p>
-</section>
-    <!--Formulaire-->
-<section class="contact">
-    <div class="Formulaire">
-        <h2>Inscription</h2>
-        <form id="form">
-        <label for="name"> Nom & Prénom</label>
-        <input type="text" id="nom">
-        <small></small>
-        <label>Email</label>
-        <input type="text" id="email">
-        <label>Téléphone</label>
-        <small></small>
-        <input type="telephone" id="telephone">
-        <label>Types de Participation</label>
-        <select  id="type">
-            <option value="">Choisir</option>
-            <option>Présentiel</option>
-            <option>En ligne</option>
-        </select>
-        <small></small>
-        <label>Pays</label>
-        <select id="pays">
-            <option>Mali</option>
-            <option>Sénégal</option>
-            <option>Maroc</option>
-            <option>Burkina-faso</option>
-            <option>Guinée</option>
-            <option>Nigeria</option>
-            <option>Cameroum</option>
-            <option>Algérie</option>
-            <option>Ghana</option>
-            <option>Congo</option>
-            <option>Togo</option>
-            <option>Bénin</option>
-            <option >Mauritanie</option>
-        </select>
-        <small></small>
-        <label>Motivation</label>
-        <textarea  id="message"></textarea>
-        <small></small>
-        <button type="submit">S'inscrire</button>
-        </form>
-    </div>
-    <div class="infos">
-    <h2>Informations</h2>
-    <p>📍 Dakar-Sénégal</p>
-    <p> 📧 <a href="mailto:Contact@afriConnectSummit.com">Contact@afriConnectSummit.com</a></p>
-    <p>📞 +221 77 143 63 75</p>
-    <p>⏱️ 9h-18h</p>
-    </div>
-</section>
-<!--Sections faq en accordion-->
-<section class="faq">
-<h2>Foire Aux questions</h2>
-<div class="accordion">
-    <input type="checkbox" id="q1">
-    <label for="q1">1_Comment s'inscrire?</label>
-    <div class="content">
-        <p>Remplissez le formulaire puis cliquez sur s'inscrire</p>
-    </div>
-     <input type="checkbox" id="q2">
-    <label for="q2">2_l'événement est-il gratuit?</label>
-    <div class="content">
-        <p>Oui, l'acces est entièrement gratuit après l'inscription</p>
-    </div>
-     <input type="checkbox" id="q3">
-    <label for="q3">3_puis-je participer en ligne?</label>
-    <div class="content">
-        <p> Oui, une participation en ligne est bien disponible.</p>
-    </div>
- <input type="checkbox" id="q4">
-    <label for="q4">4_Ou se déroule l'événement</label>
-    <div class="content">
-        <p> A Dakar ,avec une diffusion en ligne</p>
-    </div>
-     <input type="checkbox" id="q5">
-    <label for="q5">5_Recevrai-je un certificat?</label>
-    <div class="content">
-        <p>Oui, un certificat de participation sera envoyé par mail</p>
-    </div>
-</div>
-</section>
-<!--Section maps-->
-<section class="map">
-    <h2>Notre localisation</h2>
-    <iframe
-        src="https://www.google.com/maps?q=Dakar,Senegal&output=embed"
-        width="100%"
-        height="400"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy">
-    </iframe>
-</section>
-</main>
- <footer>
-        <div>
-            <h3>Icones Réseaux</h3>
-            <a href="http://telegram.org"><i class="bi bi-telegram"></i></a>
-            <a href="http://youtube.com"><i class="bi bi-youtube"></i></a>
-            <a href="http://instagram.com"><i class="bi bi-instagram"></i></a>
+    <!--Section HERO-->
+    <main>
+        <section class="hero-interne">
+            <h1>Contact</h1>
+            <p class="breadcrumb">Accueil > Contact</p>
+        </section>
+        <!--Formulaire-->
+        <section class="contact">
+            <div class="Formulaire">
+                <h2>Inscription</h2>
+                <form id="form">
+                    <label for="name"> Nom & Prénom</label>
+                    <input type="text" id="nom">
+                    <small></small>
+                    <label>Email</label>
+                    <input type="text" id="email">
+                    <label>Téléphone</label>
+                    <small></small>
+                    <input type="telephone" id="telephone">
+                    <label>Types de Participation</label>
+                    <select id="type">
+                        <option value="">Choisir</option>
+                        <option>Présentiel</option>
+                        <option>En ligne</option>
+                    </select>
+                    <small></small>
+                    <label>Pays</label>
+                    <select id="pays">
+                        <option>Mali</option>
+                        <option>Sénégal</option>
+                        <option>Maroc</option>
+                        <option>Burkina-faso</option>
+                        <option>Guinée</option>
+                        <option>Nigeria</option>
+                        <option>Cameroum</option>
+                        <option>Algérie</option>
+                        <option>Ghana</option>
+                        <option>Congo</option>
+                        <option>Togo</option>
+                        <option>Bénin</option>
+                        <option>Mauritanie</option>
+                    </select>
+                    <small></small>
+                    <label>Motivation</label>
+                    <textarea id="message"></textarea>
+                    <small></small>
+                    <button type="submit">S'inscrire</button>
+                </form>
+            </div>
+            <div class="infos">
+                <h2>Informations</h2>
+                <p>📍 Dakar-Sénégal</p>
+                <p> 📧 <a href="mailto:Contact@afriConnectSummit.com">Contact@afriConnectSummit.com</a></p>
+                <p>📞 +221 77 143 63 75</p>
+                <p>⏱️ 9h-18h</p>
+            </div>
+        </section>
+        <!--Sections faq en accordion-->
+       <section class="faq">
+
+    <h2>Foire Aux Questions</h2>
+
+    <div class="accordion">
+
+        <div class="faq-item">
+            <input type="checkbox" id="q1">
+            <label for="q1">
+                <span>Comment s'inscrire ?</span>
+                <span class="icon"></span>
+            </label>
+
+            <div class="content">
+                <p>
+                    Remplissez le formulaire puis cliquez sur <strong>S'inscrire</strong>.
+                    Vous recevrez ensuite un e-mail de confirmation.
+                </p>
+            </div>
         </div>
-        <div>
-            <h3>Copright dynamique</h3>
-            <p> <span id="year"> @ AfriConnectSummit-Plateforme d'innovations techniques en Afrique</span></p>
+
+        <div class="faq-item">
+            <input type="checkbox" id="q2">
+            <label for="q2">
+                <span>L'événement est-il gratuit ?</span>
+                <span class="icon"></span>
+            </label>
+
+            <div class="content">
+                <p>
+                    Oui, l'accès est entièrement gratuit après l'inscription.
+                </p>
+            </div>
         </div>
-        <div>
-            <h3>Boutton retour en haut</h3>
-            <button id="btnTop">
+
+        <div class="faq-item">
+            <input type="checkbox" id="q3">
+            <label for="q3">
+                <span>Puis-je participer en ligne ?</span>
+                <span class="icon"></span>
+            </label>
+
+            <div class="content">
+                <p>
+                    Oui, une participation en ligne est disponible via notre plateforme.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <input type="checkbox" id="q4">
+            <label for="q4">
+                <span>Où se déroule l'événement ?</span>
+                <span class="icon"></span>
+            </label>
+
+            <div class="content">
+                <p>
+                    L'événement se déroule à Dakar avec une diffusion en ligne.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <input type="checkbox" id="q5">
+            <label for="q5">
+                <span>Recevrai-je un certificat ?</span>
+                <span class="icon"></span>
+            </label>
+
+            <div class="content">
+                <p>
+                    Oui, un certificat de participation sera envoyé par e-mail après l'événement.
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+          <!--Footer-->
+    <footer>
+        <div class="footer-container">
+        <div class="footer-col">
+          <h3>AfriConnectSummit</h3>
+          <p>Plateforme qui rassemble les innovateurs, entrepreneurs et experts africains pour construire le futur de la technologie</p>
+          <a href="index.html">
+            <div class="logo">
+             <img src="images/logoAfriConnectSummit.png" alt="logo" class="logo">
+            </div>
+          </a>
+        </div>
+        <div class="footer-col">
+          <h3>Liens utiles</h3>
+          <ul class="list-unstyled">
+            <li> <a href="index.html">Accueil</a></li>
+            <li> <a href="programme.html">Programme</a></li>
+            <li><a href="intervenants.html">Intervenants</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <!--contact-->
+          <h3>Contact</h3>
+          <p> <a href="mailto:Contact@afriConnectSummit.com">Contact@afriConnectSummit</a></p>
+          <p>📞 +221 77 143 63 75</p>
+          <p>📍Dakar,Sénégal</p>
+        </div>
+        </div>
+      <hr>
+      <div class="foot-bas">
+        <p> <span id="year"> @ AfriConnect Summit - Tous droits réservés</span>
+        </p>
+        <div class="icon">
+          <a href="http://telegram.org"><i class="bi bi-telegram"></i></a>
+          <a href="http://youtube.com"><i class="bi bi-youtube"></i></a>
+          <a href="http://instagram.com"><i class="bi bi-instagram"></i></a>
+        </div>
+      </div>
+    </footer>
+    <button id="btnTop">
                 <i class=" bi bi-arrow-up-circle"></i>
             </button>
-        </div>
-    </footer>
-    <script src="js/main.js"></script>
+        <script src="js/main.js"></script>
 </body>
+
 </html>
