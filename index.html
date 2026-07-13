@@ -17,89 +17,92 @@
     <!--Le contenu de ma page -->
     <!--L'entète LOGO + lien-->
     <header>
-        <nav>
+        <nav class="navbar">
             <div class="nav-container">
-            <div> <a href="index.html"><img src="images/logooo.png" alt="logo"  class="logo"></a></div>
-            <ul class="menu" id="menu">
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="programme.html">Programme</a></li>
-                <li><a href="intervenants.html">Intervenants</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="btn-et-autres">
-                <!--Bouton dark mobile-->
-            <button id="themeToggle">🌙</button>
-            <a href="contact.html" class="inscription">S'inscrire maitenant</a>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            </div>
+                <div> <a href="index.html"><img src="images/logooo.png" alt="logo" class="logo"></a></div>
+                <ul class="menu" id="menu">
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="programme.html">Programme</a></li>
+                    <li><a href="intervenants.html">Intervenants</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <div class="btn-et-autres">
+                    <!--Bouton dark mobile-->
+                    <button id="themeToggle">🌙</button>
+                    <a href="contact.html" class="inscription">S'inscrire maitenant</a>
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
     <main>
         <!--Section hero-->
-        <section class="Hero">
-            <div class="gauche">
-            <h1>AfriConnect Summit 2026</h1>
-            <h2>
-                Connecter les talents africains,inspirer l'innovation,construire l'avenir.
-                <br>18 - 20 Novembre 2026
-                <br>Dakar, Sénégal
-            <div class="hero-badges">
-    <span>👥 +3000 participants</span>
-    <span>🎤 50+ speakers</span>
-</div>
-</h2>
-
-            <a href="programme.html" class="voir">Voir le programme</a>
-            <a href="contact.html" class="inscrire">Se connecter</a>
+        <section >
+            <div class="Hero">
+            <div class="gauche reveal-left">
+                <h1>AfriConnect Summit 2026</h1>
+                <h2>
+                    Connecter les talents africains,inspirer l'innovation,construire l'avenir.
+                    <br>18 - 20 Novembre 2026
+                    <br>Dakar, Sénégal
+                    <div class="hero-badges">
+                        <span>👥 +3000 participants</span>
+                        <span>🎤 50+ speakers</span>
+                    </div>
+                </h2>
+                <a href="programme.html" class="voir">Voir le programme</a>
+                <a href="contact.html" class="inscrire">Se connecter</a>
             </div>
-            <div class="video">
-        <video autoplay muted loop playsinline class="hero-video">
-        <source src="images/conference.mp4" type="video/mp4">
-         </video>
-         </div>
-         
+            <div class="video reveal-left">
+                <video autoplay muted loop playsinline class="hero-video">
+                    <source src="images/conference.mp4" type="video/mp4">
+                </video>
+            </div>
+            </div>
+            <div class="compteur">
+             <h3 class="center">Le sommet commence dans <strong class="counter" data-target="120">0</strong> jours <strong class="counter" data-target="05">0</strong> heures
+            <strong class="counter" data-target="40">0</strong> minutes <strong class="counter" data-target="12">0</strong> secondes</h3>
+        </div>
         </section>
-     <h3 class="center">Le sommet commence dans <strong>120</strong> jours <strong>05</strong> heures <strong>40</strong>  minutes <strong>12</strong> secondes</h3>
         <!--Sections Chiffres clés-->
-        <section class="chiffres-clés">
+        <section class="chiffres-clés fade">
             <div class="chiffre">
                 <div>
-                    <h2>1 200+</h2>
+                    <h2 class="counter" data-target="1200"> 0+</h2>
                     <p>Participants</p>
-                </div>  
+                </div>
                 <div>
-                    <h2>48+</h2>
+                    <h2 class="counter" data-target="48">0+</h2>
                     <p>Intervenants</p>
                 </div>
                 <div>
-                    <h2>3+</h2>
+                    <h2 class="counter" data-target="3">0+</h2>
                     <p>Jours</p>
                 </div>
                 <div>
-                    <h2>12+</h2>
+                    <h2 class="counter" data-target="12">0+</h2>
                     <p>Pays</p>
                 </div>
             </div>
         </section>
         <!--Sections Pourquoi Participer-->
         <h2 class="center">Les reaisons les plus valables pour y participer</h2>
-        <section class="Participer">
-            <div>
+        <section class="Participer fade">
+            <div class="jsp">
                 <i class="bi bi-lightbulb"></i>
                 <h2>Développer ses compétences</h2>
                 <p>Participer à des ateliers pratiques, pour approfondir tes capacités.</p>
             </div>
-            <div>
+            <div class="jsp">
                 <i class="bi bi-people-fill"></i>
                 <h2> Rencontrer des experts</h2>
                 <p>Échanger avec les meilleurs professionnels africains, très qualifiés.</p>
             </div>
-            <div>
+            <div class="jsp">
                 <i class="bi bi-graph-up-arrow"></i>
                 <h2>Créer des opportunités</h2>
                 <p>Rencontrer des entreprises et investisseurs et choisir selon les besoins.</p>
@@ -107,112 +110,111 @@
         </section>
         <!--Sections Intervenants Vedettes-->
         <h2 class="center">Nos Intervenants Vedettes Qui nous aident à bien realiser ce conférence</h2>
-        <section class="intervenants">
+        <section class="intervenants fade">
             <div class="carde">
                 <img src="images/inter41.jpg" alt="inter1">
                 <h3>Ibrahim Keita</h3>
-                <h4>Ingenieur Reseaux et Securité</h4>
-                <h5>📍Pays:Mali</h5>
-                 <a href="intervenants.html" class="btne"> Voir le profil →</a>
-            </div>
-            <div class="carde">
-                <img src="images/intervant8.jpg.jpeg" alt="inter2">
-                <h3>Oumar Sacko</h3> 
-                <h4>Marketing Digital</h4>
-                <h5>📍Pays:Sénégal</h5>
-               <a href="intervenants.html" class="btne"> Voir le profil →</a>
-            </div>
-            <div class="carde">
-                <img src="images/inter46.avif" alt="inter3">
-                <h3> Cheikh N'Diaye</h3>
-                <h4>Data Scientist</h4>
-                <h5>📍Pays:Cote d'Ivoire</h5>
+                <h4 class="metier">Réseaux et Securité</h4>
+                <h5 class="pays">📍Pays:Mali</h5>
                 <a href="intervenants.html" class="btne"> Voir le profil →</a>
             </div>
             <div class="carde">
-                <img src="images/inter45.avif" alt="inter4">
+                <img src="images/intervant8.jpg.jpeg" alt="inter2">
+                <h3>Oumar Sacko</h3>
+                <h4 class="metier">Marketing Digital</h4>
+                <h5 class="pays">📍Pays:Sénégal</h5>
+                <a href="intervenants.html" class="btne"> Voir le profil →</a>
+            </div>
+            <div class="carde">
+                <img src="images/photo-1718783573640-c5b01c37bf58.avif" alt="inter3">
+                    <h3> Cheikh N'Diaye</h3>
+                    <h4 class="metier">Data Scientist</h4>
+                    <h5 class="pays">📍Pays:Cote d'Ivoire</h5>
+                    <a href="intervenants.html" class="btne"> Voir le profil →</a>
+            </div>
+            <div class="carde">
+                <img src="images/photo-1609436132311-e4b0c9370469.avif" alt="inter4">
                 <h3> Héléna Fianno</h3>
-                <h4>Développeuse Web</h4>
-                <h5>📍Pays:Togo</h5>
+                <h4 class="metier">Développeuse Web</h4>
+                <h5 class="pays">📍Pays:Togo</h5>
                 <a href="intervenants.html" class="btne"> Voir le profil →</a>
             </div>
         </section>
         <!--Sections SPONSORS-->
-      <section class="sponsors">
-        <span class="part">Partenaires</span>
-         <h2>Nos Sponsors</h2>
-        <p> Un grand Merci à nos partenaires qui contribuent au progrès de AfriConnect Summit</p>
+        <section class="sponsors fade">
+            <span class="part">Partenaires</span>
+            <h2>Nos Sponsors</h2>
+            <p> Un grand Merci à nos partenaires qui contribuent au progrès de AfriConnect Summit</p>
 
-    <div class="sponsors-container">
+            <div class="sponsors-container">
 
-        <div class="card silver">
-            <span class="badge">🥈 Sponsor Argent</span>
-            <img src="images/SONATEL.jpg.jpeg" alt="Sonatel">
-        </div>
+                <div class="card silver">
+                    <span class="badge">🥈 Sponsor Argent</span>
+                    <img src="images/SONATEL.jpg.jpeg" alt="Sonatel">
+                </div>
 
-        <div class="card gold">
-            <span class="badge">🥇 Sponsor Or</span>
-            <img src="images/Afribank.jpeg" alt="AfriBank">
-        </div>
+                <div class="card gold">
+                    <span class="badge">🥇 Sponsor Or</span>
+                    <img src="images/Afribank.jpeg" alt="AfriBank">
+                </div>
 
-        <div class="card bronze">
-            <span class="badge">🥉 Sponsor Bronze</span>
-            <img src="images/orange.jpg.jpeg" alt="Orange">
-        </div>
+                <div class="card bronze">
+                    <span class="badge">🥉 Sponsor Bronze</span>
+                    <img src="images/orange.jpg.jpeg" alt="Orange">
+                </div>
 
-    </div>
-</section>
+            </div>
+        </section>
     </main>
     <!--Footer-->
     <footer>
-    <div class="footer-container">
+        <div class="footer-container fade">
 
-        <div class="footer-col">
-            <img src="images/logooo.png" alt="Logo AfriConnect Summit" class="footer-logo">
+            <div class="footer-col">
+                <img src="images/logooo.png" alt="Logo AfriConnect Summit" class="footer-logo">
 
-            <p>
-                AfriConnect Summit rassemble les innovateurs,
-                entrepreneurs et experts africains afin de construire
-                l'avenir de la technologie sur le continent.
-            </p>
-        </div>
+                <p>
+                    AfriConnect Summit rassemble les innovateurs,
+                    entrepreneurs et experts africains afin de construire
+                    l'avenir de la technologie sur le continent.
+                </p>
+            </div>
 
-        <div class="footer-col">
-            <h3>Navigation</h3>
+            <div class="footer-col">
+                <h3>Navigation</h3>
 
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="programme.html">Programme</a></li>
-                <li><a href="intervenants.html">Intervenants</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="programme.html">Programme</a></li>
+                    <li><a href="intervenants.html">Intervenants</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
 
-        <div class="footer-col">
-            <h3>Contact</h3>
+            <div class="footer-col">
+                <h3>Contact</h3>
 
-            <p>📍 Dakar, Sénégal</p>
-            <p>📞 +221 77 143 63 75</p>
-            <p> <a href="mailto:contact@africonnectsummit.com"></a>✉ contact@africonnectsummit.com</p>
+                <p>📍 Dakar, Sénégal</p>
+                <p>📞 +221 77 143 63 75</p>
+                <p> <a href="mailto:contact@africonnectsummit.com"></a>✉ contact@africonnectsummit.com</p>
 
-            <div class="socials">
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-                <a href="#"><i class="bi bi-linkedin"></i></a>
-                <a href="#"><i class="bi bi-youtube"></i></a>
-                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <div class="socials">
+                    <a href="http://facebook.com"><i class="bi bi-facebook"></i></a>
+                    <a href="http://instagram.com"><i class="bi bi-instagram"></i></a>
+                    <a href="http://linkedin.com"><i class="bi bi-linkedin"></i></a>
+                    <a href="http://youtube.com"><i class="bi bi-youtube"></i></a>
+                    <a href="http://twitter-x.com"><i class="bi bi-twitter-x"></i></a>
+                </div>
             </div>
         </div>
 
-    </div>
-
-    <div class="footer-bottom">
-        <p>© 2026 AfriConnect Summit. Tous droits réservés.</p>
-    </div>
-</footer>
+        <div class="footer-bottom">
+            <p>© 2026 AfriConnect Summit. Tous droits réservés.</p>
+        </div>
+    </footer>
     <button id="btnTop">
-                <i class=" bi bi-arrow-up-circle"></i>
-            </button>
+        <i class=" bi bi-arrow-up-circle"></i>
+    </button>
     <script src="js/main.js"></script>
     <!--<script type="module" src="js/hero3d.js"></script>-->
 </body>
