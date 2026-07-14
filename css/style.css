@@ -85,6 +85,7 @@ a{
 /*Les liens au survol*/
 nav a:hover {
     color: var(--secondary);
+     padding-left: 10px;
 }
 /*Lien reste active quand on y est*/
 nav a.active {
@@ -97,7 +98,47 @@ ul {
     list-style: none;
     cursor: pointer;
 }
+/* Boutons */
+.tabs{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-bottom:40px;
+}
 
+.tab{
+    padding:12px 30px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.tab.active{
+    background:#5B4BDB;
+    color:#fff;
+}
+
+/* Plannings */
+.planning{
+    display:none;
+    animation:fade .5s ease;
+}
+
+.planning.active{
+    display:block;
+}
+
+@keyframes fade{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
 a::after {
     content: "";
     position: absolute;
@@ -1209,7 +1250,7 @@ footer {
     overflow-x: auto;
     white-space: nowrap;
     scrollbar-width: none;
-    padding: 50px;
+    padding: 40px;
 }
 
 /*qui scroll vers la droite pour voir les autres catégories*/
@@ -1239,7 +1280,12 @@ footer {
     transform: translateY(-3px);
     box-shadow: 0 12px 24px rgba(245, 158, 11, .25);
 }
-
+/*quand la categorie est selectionné*/
+.btn.active{
+    background:var(--dark-card);
+    color:#fff;
+    box-shadow:0 10px 25px rgba(91,75,219,.3);
+}
 /*Les cartes des intervenants*/
 .speakers {
     width: 90%;
@@ -1269,11 +1315,11 @@ footer {
 
 /* Effet quinconce */
 
-.speaker:nth-child(3n+2) {
-    margin-top: 40px;
+.col:nth-child(3n+2) {
+    margin-top: 60px;
 }
 
-.speaker:nth-child(3n) {
+.col:nth-child(3n) {
     margin-top: 80px;
 }
 
@@ -1372,7 +1418,6 @@ footer {
     max-width: 1200px;
     margin: 80px auto;
     padding: 0 20px;
-
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 40px;
@@ -1435,7 +1480,7 @@ footer {
 #form input:focus,
 #form select:focus,
 #form textarea:focus {
-    border-color: #166534;
+    border-color: #a9c3ec;
     background: linear-gradient(0 20px 50px rgba(0, 0, 0, .25),
             0 0 60px rgba(130, 80, 255, .25));
     box-shadow: 0 0 0 4px rgba(22, 101, 52, .15);
@@ -1531,7 +1576,7 @@ small {
 /*  FAQ  */
 
 .faq {
-    width: 70%;
+    width: 80%;
     max-width: 900px;
     margin: 100px auto;
     background: #0b0d2f;
@@ -1596,7 +1641,7 @@ small {
 .content {
     max-height: 0;
     overflow: hidden;
-    background: #19e6d1;
+    background: #60A5FA;
     padding: 0 35px;
     border-radius: 0 0 35px 35px;
     transition: all .4s ease;
@@ -1611,7 +1656,7 @@ small {
 /* Question ouverte */
 
 .faq-item input:checked+label {
-    background: #18ead4;
+    background: #60A5FA;
     color: #111;
     border-radius: 45px 45px 0 0;
 }
@@ -1632,7 +1677,7 @@ small {
 /* Hover */
 
 .faq-item label:hover {
-    color: #18ead4;
+    color: #60A5FA;
 }
 
 .faq-item input:checked+label:hover {
@@ -1739,7 +1784,7 @@ small {
     /* Boutons */
     .voir,
     .inscrire {
-        display: inline-block;
+        display: block;
         width: 220px;
         margin: 10px auto;
     }
@@ -1799,6 +1844,8 @@ body.dark nav a {
 body.dark nav a:hover,
 body.dark nav a.active {
     color: #60A5FA;
+    border-bottom: 2px solid #60A5FA;
+    padding-left: 0;
 }
 
 /*les cartes*/
@@ -1865,4 +1912,64 @@ body.dark .Hero {
 .reveal-left.active {
     opacity: 1;
     transform: translateX(0);
+}
+
+
+/*CSS pour Validtion Formulaire*/
+small{
+    display:block;
+    margin-bottom:15px;
+    color:#e63946;
+    font-size:.9rem;
+}
+
+.succes{
+    color:#16a34a;
+    font-weight:600;
+    margin-top:10px;
+}
+
+.erreur{
+    border:2px solid #e63946;
+}
+
+.valide{
+    border:2px solid #16a34a;
+}
+/*Filtrage dynamique des cartes (apparition avec un effet fluide)*/
+.col{
+    transition: .4s;
+}
+
+.col.hide{
+    opacity:0;
+    transform:scale(.8);
+    pointer-events:none;
+}
+
+.col.show{
+    opacity:1;
+    transform:scale(1);
+}
+/*Apparition des elements à partir du bas*/
+.reveal{
+    opacity:0;
+    transform:translateY(80px);
+    transition:.8s ease;
+}
+
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+}
+/*Animation de droite vers gauche*/
+/*Moment d'apparition*/
+.reveal-right{
+    opacity:0;
+    transform:translateX(100px);
+    transition:.8s ease;
+}
+.reveal-right.active{
+    opacity:1;
+    transform:translateX(0);
 }
